@@ -1,0 +1,22 @@
+{
+  "name": "mask-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Renpona/VTGameJam2020.git"
+  },
+  "author": "Renpona",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Renpona/VTGameJam2020/issues"
+  },
+  "homepage": "https://github.com/Renpona/VTGameJam2020#readme",
+  "devDependencies": {
+    "typescript": "^4.5.4"
+  }
+}

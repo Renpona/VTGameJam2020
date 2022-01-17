@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Mask Generator</title>
+        <script type="text/javascript" src="dist/index.js"></script>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div>
+            <button id="generate">Generate Mask</button>
+            <div id="output"></div>
+        </div>
+        <script>
+            document.getElementById("generate").addEventListener('click', maskGen);
+            function maskGen() {
+                document.getElementById("output").value = generateMask();
+            }
+        </script>
+    </body>
+</html>
