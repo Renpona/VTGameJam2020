@@ -1,0 +1,24 @@
+body {
+    background-color: #555555;
+}
+
+#container {
+    width: 60%;
+    min-width: 500px;
+    color: #FFFFFF;
+    background-color: #770000;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:20%;
+    font-family:'Constantia', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16pt;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+#output {
+    min-width: 400px;
+    min-height: 50px;
+    text-align: left;
+}

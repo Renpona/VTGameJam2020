@@ -125,10 +125,10 @@ class Mask {
     }
 
     get text() {
-        let text = `You can't seem to make out any details about their appearance. Everything seems hazy and indistinct, save for a mask adorning their face. Your eyes can't help but be drawn to the ${textGen.spooky} thing, as if a subtle power dwells within. \n`;
-        text += `${this.sizeText} \n`;
-        text += `${this.extensionsText} \n`;
-        text += `${this.decorationsText} \n`;
+        let text = `<p>You can't seem to make out any details about their appearance. Everything seems hazy and indistinct, save for a mask adorning their face. Your eyes can't help but be drawn to the ${textGen.spooky} thing, as if a subtle power dwells within. </p>`;
+        text += `<p>They're wearing ${this.sizeText} </p>`;
+        text += `<p>${this.extensionsText} </p>`;
+        text += `<p>${this.decorationsText} </p>`;
 
         return text;
     }
@@ -176,7 +176,7 @@ class Color {
     }
 
     get text() {
-        return colorData.adjectives[this.adjective] + colorData.colors[this.color];
+        return colorData.adjectives[this.adjective] + " " + colorData.colors[this.color];
     }
 }
 
