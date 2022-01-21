@@ -113,7 +113,7 @@ class Mask {
                 case 4:
                     output += `The ${location} of the mask is missing a piece. But you can't tell if it's an intentional design element or the result of damage. For that matter, is it even missing a piece? Or is it just that every other mask has a piece it shouldn't?` 
                     break;
-                case 4:
+                case 5:
                     output += `The ${location} of the mask is decorated with intricate ${color} patterns. The design is almost hypnotic; the more you look, the more they feel like they're the only thing in the universe that truly exists. Probably best not to look too hard.`
                     break;
                 default:
@@ -176,7 +176,9 @@ class Color {
     }
 
     get text() {
-        return colorData.adjectives[this.adjective] + " " + colorData.colors[this.color];
+        let adjective = colorData.adjectives[this.adjective] + " ";
+        if (adjective == "none ") adjective = "";
+        return adjective + colorData.colors[this.color];
     }
 }
 
